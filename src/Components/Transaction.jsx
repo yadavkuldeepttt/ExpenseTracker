@@ -23,11 +23,11 @@ const Transaction = ({ transaction }) => {
     <div>
       <li className={transaction.amount < 0 ? "minus" : "plus"}>
         {transaction.text}
-        {/* {data.text} */}
+      
         <span>
           {sign}
           {moneyFormatter(transaction.amount)}
-          {/* {moneyFormatter(data.amount)} */}
+     
         </span>
         <button
           onClick={() => deleteTransaction(transaction.id)}
