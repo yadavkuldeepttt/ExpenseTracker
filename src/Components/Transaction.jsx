@@ -8,7 +8,7 @@ let moneyFormatter = (num) => {
     p[0]
       .split("")
       .reverse()
-      .reduce(function (acc, num, i, orig) {
+      .reduce(function (acc, num, i) {
         return num === "-" ? acc : num + (i && !(i % 3) ? "," : "") + acc;
       }, "") +
     "." +
